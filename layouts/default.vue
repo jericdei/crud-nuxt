@@ -10,6 +10,8 @@ useHead({
 
 <template>
   <main class="min-h-screen bg-zinc-900 py-16 text-zinc-100">
+    <NuxtLoadingIndicator />
+
     <div class="container mx-auto">
       <slot />
     </div>

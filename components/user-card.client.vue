@@ -4,6 +4,14 @@ import type { User } from "@prisma/client";
 defineProps<{
   user: User;
 }>();
+
+function deleteUser(id: number) {
+  console.log(id);
+
+  // await $fetch(`/api/users/${id}/delete`, {
+  //   method: "delete",
+  // });
+}
 </script>
 
 <template>
@@ -25,6 +33,7 @@ defineProps<{
       <Button
         variant="text"
         size="xs"
+        @click="() => console.log(';foo')"
         ><i class="ri-delete-bin-2-fill ri-lg text-red-700"></i
       ></Button>
     </div>

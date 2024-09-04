@@ -16,6 +16,7 @@ export default defineNuxtConfig({
   // @ts-ignore-next-line
   prisma: {
     generateClient: false,
+    autoSetupPrisma: true,
   },
   // @ts-ignore-next-line
   shadcn: {
